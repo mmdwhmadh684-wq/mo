@@ -510,13 +510,21 @@ if ($message && isset($abdo['mode'][$from_id]['mode']) && $abdo['mode'][$from_id
     }
     exit;
 }
-
+        
 if ($data == "eshh") {
     if (!empty($eshterak)) {
-        $eshterak_list = "📋 **قنوات الاشتراك الإجباري المضافة حالياً:**\n\n";
+        $eshterak_list = "📋 **قنوات الاشتراك الإجباري المضافة حالياً:**\n";
         foreach ($eshterak as $channel_id => $val) {
             $get = bot("getChat", [
-    "chat_id" => $channel_id
-]);
+                "chat_id" => $channel_id
+            ]);
+            $title = $get->result->title ?? $channel_id;
+            $eshterak_list .= "- $title (`$channel_id`)\n";
+        }
+    }
+}
+        
+            
+
 
        
