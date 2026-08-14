@@ -1,7 +1,7 @@
 <?php
 ob_start();
 $token = "8507254017:AAFAAAIEZ5KXm9jiCAiCEdgpm87-0kpCSyg";
-define("API_KEY", $token);
+define("API_KEY", $8507254017:AAFAAAIEZ5KXm9jiCAiCEdgpm87-0kpCSyg);
 $admin = "8960841099";
 $dev_admin = 8960841099;
 $log_channel = "@ALZAEMMM890";
