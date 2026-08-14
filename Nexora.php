@@ -515,5 +515,8 @@ if ($data == "eshh") {
     if (!empty($eshterak)) {
         $eshterak_list = "📋 **قنوات الاشتراك الإجباري المضافة حالياً:**\n\n";
         foreach ($eshterak as $channel_id => $val) {
-            $ = bot("getChat", ["chat_id"
+            $get = bot("getChat", [
+    "chat_id" => $channel_id
+]);
+
        
