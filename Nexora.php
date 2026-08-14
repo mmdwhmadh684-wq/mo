@@ -508,7 +508,7 @@ if ($message && isset($abdo['mode'][$from_id]['mode']) && $abdo['mode'][$from_id
             "text" => "❌ القناة غير موجودة بالفعل في قائمة الاشتراك الإجباري.",
         ]);
     }
-    exit;
+  //  exit;
 }
         
 if ($data == "eshh") {
