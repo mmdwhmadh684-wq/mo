@@ -215,7 +215,7 @@ function logToChannel() {
         ]);
         return;
     }
-}
+
 
 if ($message) {
     logToChannel();
